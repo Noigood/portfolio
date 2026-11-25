@@ -1,3 +1,228 @@
+body {
+    background-color: #292929;
+   
+   
+}
+
 .Hnavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: "Mitr", sans-serif;
+    font-weight: 300; 
+    color: #ffff;
+
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px) saturate(172%);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(243, 191, 1, 0.25);
+    
+    margin: 20px auto;
+    padding: 20px;
+    width: 450px;
+
+    position: sticky;
+    top: 20px;
+    z-index: 5;
+   
+}
+
+.Hnavbar p {
+    margin: 0;
+}
+
+.Hnavbar a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.Hnavbar a:hover {
+    text-decoration: underline;
+    color: #F3BF01;
+}
+
+.intro { 
+    color: white;
+    margin-left: 50px;
+    padding-top: 50px;
+    font-family: "Mitr", sans-serif;
+    font-style: bold;
+    font-size: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+
+.intro span{
+    color: #000000;
     background-color: #F3BF01;
+}
+
+.intro_text{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.profile_pic {
+    width: 320px;
+    height: 380px;
+
+    box-shadow: 0 8px 32px rgba(243, 191, 1, 0.25);
+    border: #000000 solid;
+    border-radius: 10%;
+
+}
+
+#img_1 {
+    position: relative;
+    right: 50px;
+    
+    z-index: 3;
+}
+
+#img_2 {
+    position: absolute;
+    right: 200px;
+    transform: rotate(10deg);
+    animation-name: img2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease; 
+    animation-delay: 2s;
+}
+
+#img_3 {
+    position: absolute;
+    right: 280px;
+    transform: rotate(-10deg);
+    animation-name: img3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease; 
+    animation-delay: 2s;
+}
+
+@keyframes img2 {
+    to {
+        right: 200px;
+        transform: rotate(10deg);
+    }
+    
+    50% {
+        right: 100px;
+        transform: rotate(30deg);
+    }
+
+    100% {
+        right: 200px;
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes img3 {
+    to {
+        right: 280px;
+        transform: rotate(-10deg);
+    }
+    
+    50% {
+        right: 380px;
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        right: 280px;
+        transform: rotate(-10deg);
+    }
+
+}
+
+.main {
+    margin-top: 100px;
+    color: white;
+}
+
+.head_title {
+    color: #F3BF01;
+    font-family: "Mitr", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    
+}
+
+.title {
+    color: #F3BF01;
+    font-family: "Mitr", sans-serif;
+    font-style: bold;
+    font-size: 30px;
+}
+
+.project_sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.project {
+
+    width: 500px;
+    height: 430px;
+
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px) saturate(172%);
+    box-shadow: 0 2px 18px  rgba(243, 191, 1, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 10%;
+}
+
+.project img {
+    width: 500px;
+    height: 240px;
+    border-radius: 10% 10% 0 0;
+}
+
+.detail {
+    font-family: "Mitr", sans-serif;
+    font-size: 26px;
+    font-style: bold;
+    margin-bottom: 0;
+}
+
+.para {
+    font-family: "Mitr", sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
+    
+}
+
+.text {
+    padding: 10px 14px;
+}
+
+.button {
+    font-family: "Mitr", sans-serif;
+    color: #F3BF01;
+
+   
+    padding: 10px 14px;
+    border: #F3BF01 solid 2px;
+    border-radius: 10px;
+    background-color: none;
+    text-decoration: none;
+    transition: scale 2s;
+}
+
+.button:hover {
+    
+    background-color: #F3BF01;
+    color: #000000;
+    scale: 2;
 }
